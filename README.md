@@ -1,8 +1,8 @@
-BirsaKisan-Drishti Backend
+## BirsaKisan-Drishti Backend
 
-FASTAPI backend for Birsakisan-Drishti agricultural assitance
+# FASTAPI backend for Birsakisan-Drishti agricultural assitance
 
-QUICK START
+# QUICK START
 PREREQUISISTES:
 
 python 3.9+
@@ -11,11 +11,12 @@ python 3.9+
 
 -Required python packages('requirements.txt')
 
-Installation
+#  Installation
 Install dependencies:
 
 pip install -r requirements.txt
-Set up environment variables (optional): Create a .env file in the root directory:
+
+# Set up environment variables (optional): Create a .env file in the root directory:
 
 MONGODB_URI=your_mongodb_connection_string
 CORS_ORIGINS=*
@@ -23,7 +24,7 @@ SEND_SMS=false
 Run the server:
 
 uvicorn main:app --reload
-API Endpoints
+#  API Endpoints
 GET /
 
 RESPONSE:
@@ -31,29 +32,29 @@ RESPONSE:
   "status": "ok",
   "message": "Birsakisan Backend is running"
 }
-AUTHENTICATION
+# AUTHENTICATION
 POST /api/auth/login - Request OTP POST /api/auth/verify-otp - Verify OTP and login POST /api/auth/resend-otp - Resend OTP
 
-Crop Prediction (/api/crop)
+# Crop Prediction (/api/crop)
 POST /api/crop/predict - Get crop recommendation
 
-Leaf Disease Detection (/api/leaf)
+# Leaf Disease Detection (/api/leaf)
 POST /api/leaf/upload - Upload leaf image (multipart/form-data)
 
-Location & Weather (/api/location)
+# Location & Weather (/api/location)
 GET /api/location/details?lat={latitude}&lon={longitude} - Get location and weather info
 
-Yield Prediction (/api/yield)
+# Yield Prediction (/api/yield)
 POST /api/yield/predict - Predict crop yield
 
-Fertilizer Recommendation (/api/fertilizer)
+# Fertilizer Recommendation (/api/fertilizer)
 POST /api/fertilizer/recommend - Get fertilizer recommendation
 
-Irrigation Planning (/api/irrigation)
+# Irrigation Planning (/api/irrigation)
 POST /api/irrigation/plan - Get irrigation plan
 
-Voice Assistant (/api/voice)
+# Voice Assistant (/api/voice)
 POST /api/voice/assistant - Voice assistant (multipart/form-data)
 
-API Documentation
+# API Documentation
 Interactive API documentation is available at: -swagger UI:http://127.0.0.1:8000/docs
