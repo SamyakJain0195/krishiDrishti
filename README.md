@@ -1,8 +1,10 @@
 BirsaKisan-Drishti Backend
+
 FASTAPI backend for Birsakisan-Drishti agricultural assitance
 
 QUICK START
-PREREQUISISTES
+PREREQUISISTES:
+
 python 3.9+
 
 -MongoDB
